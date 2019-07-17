@@ -1,0 +1,441 @@
+
+body{
+    background-color: #FFFFFF;
+    font-family: sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+}
+
+
+/***********************************************
+header da Página
+***********************************************/
+    #top{
+    
+        position: fixed;
+        top:0;
+        left:0;
+        height: 50px;
+        width: 100%;
+        background-color: #2277aa; /* #3497d9 ; /* #0288D1;/* #175e82; /*#006699; /*#327CCB; /*#006699 #0077b3*/
+        /*border-bottom: 5px solid #0d8bf2;/* #2e70b8;*/
+        color:#FEFEFF;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 2;
+        
+        
+    }
+        .info-top{
+
+            display: block;
+            position: relative;
+            float: right;
+            height: 61px;
+            width: 20%;
+            font-size: 11px;
+            background-color:#2887bd;/* #3b9ddf; /* #039BE5; /*#1b6e98; /*#5c97d6;*/
+
+        }
+        .detalhe-top{
+            height: 61px;
+            width: 61px;
+            float: right;
+            background-image: url('../../img/detalhe-top2.png'); 
+            background-position: center;
+            background-repeat: no-repeat;
+        }   
+        .topTitle{
+            
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 300px;
+            height: 100%;
+            
+        }
+            .iCaixa{
+                display: block;
+                position: absolute;
+                width: 160px; /* 140px;*/
+                height: 38px; /*31px;*/
+                top:  5px; /*13px;*/
+                left: 10px;
+                background-image: url('http://www.cicocfo.ce.caixa/img/caixa-logo.png'); 
+                background-position: left;
+                background-repeat: no-repeat;
+                border-right: 1px solid #ffffff;
+            }
+            .linha1{
+                display: inline-block;
+                position: absolute;
+                top: 10px; /*13px;*/
+                left: 180px; /*160px;*/
+                width: auto;
+                min-width: 500px;
+                font-size: 26px;
+                font-weight: bold;
+    
+            }
+            .linha2{
+                display: block;
+                position: absolute;
+                top: 38px;
+                left: 162px;
+                font-size: 12px;
+                font-weight: bold;
+            
+            }
+            
+    
+            
+        .topInfo{
+            display: block;
+            position: relative;
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 11px;
+            
+        }
+    
+        
+    #barraMenu{
+        position: fixed;
+        display: inline-block;
+        top: 50px;
+        left: 0;
+        height: 24px;
+        width: 100%;
+        background-color:#2887bd;/* #3b9ddf; /* #039BE5; /*#1b6e98; /*#5c97d6;*/
+        font-size: 11px;
+        color:#FFFFFF;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        z-index: 1;
+    
+    
+    }
+        .menuIco{
+    
+            display: inline-block;
+            height: 24px;
+            line-height: 24px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 18px;
+    
+        }
+        .menuIco:hover{
+            color: #cccccc;
+        }
+        .barInfo{
+            float: right;
+            height: 24px;
+            line-height: 24px;
+            margin-right: 10px;
+        }
+        .barInfoLeft{
+            float: left;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 12px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    
+    .barraStatus{
+    
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 110px  auto 10px;
+        z-index: 5px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+
+
+/***********************************************
+Corpo {base} da página
+***********************************************/
+    
+
+
+    .f-conteudo{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: calc(100vh - 100px); 
+        text-align: center;
+        margin: 80px auto 0;
+        padding: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .exibe-info{
+
+        position: relative;
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: auto;
+
+
+    }
+        .exibe-info-main{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 38px;
+            font-weight: 600;
+            color:#0088cc;
+
+        }
+        .exibe-info-sub{
+            position: relative;
+            display: block;
+            width: 100%;
+            font-size: 12px;
+            color:#006699;
+
+        }
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 24px;
+        line-height: 24px;
+        text-align: left;
+        padding-left: 10px;
+        background-color: #f2f2f2;
+        
+        color: #808080;
+        font-size: 11px;
+        box-sizing: border-box;
+    }
+        .legenda-hoje{
+            position: relative;
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+            width: auto;
+            padding: 0 5px;
+            font-weight: 700;
+            background-color: #e6e6e6;
+            color:#ff6600; 
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            box-sizing: border-box;
+            
+        }
+
+
+
+    .calendario{
+        position: relative;
+        display: grid;
+        grid-template-rows: 30px 30px minmax(calc(100% - 60px), auto);
+        height: 100%;
+        width: 100%;
+    }
+        .calendario-comandos{
+            position: relative;
+            display: block;
+            height: 30px;
+            width: 100%;
+            text-align: left;
+
+        }
+            .mes-label{
+                position: relative;
+                display: inline-block;
+                height: 30px;
+                width: auto;
+                font-size: 28px;
+                font-weight: 700;
+                color:#666666;
+
+            }
+            .mes-comandos{
+                position: relative;
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                width: auto;
+                box-sizing: border-box;
+                
+            }
+                .comando{
+                    position: relative;
+                    display: inline-block;
+                    height: 28px;
+                    line-height: 28px;
+                    width: 28px;
+                    font-size: 20px;
+                    /*background-color: #f2f2f2;*/
+                    color:#666666;
+                    border-radius: 50px;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            .srs-label{
+                position: absolute;
+                display: block;
+                top:0;
+                right: 0;
+                height: 30px;
+                width: auto;
+
+            }   
+                .sr-comando{
+
+                    position: relative;
+                    display: inline-block;
+                    height: 28px;
+                    line-height: 28px;
+                    width: auto;
+                    font-size: 14px;
+                    padding: 0 5px;
+                    background-color: #006699;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                }
+                .sr-comando:hover{
+                    background-color: #002233;
+                }
+                .sr-sel{
+                    background-color: #ff6600;
+                }
+            
+        .calendario-titulo{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat( 7, minmax(150px, 1fr));
+            height: 30px;
+            width: calc(100% - 1.2em);
+            border-bottom: 2px solid #cccccc;
+        }
+            .calendario-titulo span{
+                height: 30px;
+                line-height: 30px;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 5px;
+                color:#808080;
+                box-sizing: border-box;
+            }
+
+        .calendario-datas{
+            position: relative;
+            display: grid;
+            height: auto;
+            grid-template-columns: repeat( 7, minmax(150px, 1fr));
+            grid-template-rows: repeat(6, max-content );
+            grid-gap: 2px;
+            padding-top: 2px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-top: 2px solid #cccccc;
+            border-bottom: 2px solid #cccccc;
+            background-color: #f2f2f2;
+            box-sizing: border-box;
+        }
+            .item-data-hoje{
+                position: relative;
+                display: grid;
+                grid-template-rows: 20px max-content;
+                min-height: 150px;
+                height: 100%;
+                width: 100%;
+                padding: 5px;
+                border:1px solid #b3b3b3;
+                background-color: #e6e6e6;
+                color:#ff6600; 
+                
+                box-sizing: border-box;
+                text-align: center;
+            }
+            .item-data{
+                position: relative;
+                display: grid;
+                grid-template-rows: 20px max-content;
+                min-height: 150px;
+                height: 100%;
+                width: 100%;
+                padding: 5px;
+                border:1px solid #cccccc;
+                background-color: #ffffff;
+                color:#808080;
+                box-sizing: border-box;
+                text-align: center;
+            }
+                .item-data-data{
+                    position: relative;
+                    display: block;
+                    height: 20px;
+                    line-height: 20px;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: 700;
+
+                }
+                .item-data-unidades{
+                    position: relative;
+                    display: block;
+                    height: auto;
+                    width: 100%;
+                    
+                }
+            .item-no-data{
+                position: relative;
+                display: block;
+                min-height: 150px;
+                height: 100%;
+                width: 100%;
+                padding: 10px;
+                
+                color:#cccccc;
+                box-sizing: border-box;
+            }
+
+                .feriado-municipal{
+                    position: relative;
+                    display: inline-block;
+                    height: 20px;
+                    line-height: 20px;
+                    width: auto;
+                    padding: 0 5px;
+                    background-color: #006699;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                    font-size: 11px;
+                    box-sizing: border-box;
+                }
+                .feriado-estadual{
+                    position: relative;
+                    display: inline-block;
+                    height: 20px;
+                    line-height: 20px;
+                    width: auto;
+                    padding: 0 5px;
+                    background-color: #00cc66;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                    font-size: 11px;
+                    box-sizing: border-box;
+                }
